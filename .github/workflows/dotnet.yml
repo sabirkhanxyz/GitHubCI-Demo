@@ -4,6 +4,7 @@ name: CSharp CI Pipeline
 on:
   push:
     branches: [ "master" ]
+
   pull_request:
     branches: [ "master" ]
 
@@ -12,19 +13,18 @@ permissions:
 
 jobs:
   build:
-    name: Build and Test C# Application
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Setup .NET SDK
+      - name: Setup .NET 10
         uses: actions/setup-dotnet@v6
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restore Dependencies
+      - name: Restore NuGet Packages
         run: dotnet restore
 
       - name: Build Application
