@@ -11,14 +11,14 @@ namespace GitHubCI_Demo
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Welcome to GitHub Actions!");
+            Calculator calculator = new Calculator();
 
-            int number1 = 10;
-            int number2 = 20;
+            Console.WriteLine("===== Calculator Apps =====");
 
-            int result = number1 + number2;
-
-            Console.WriteLine("Addition Result: " + result);
+            Console.WriteLine("Addition: " + calculator.Add(10, 5));
+            Console.WriteLine("Subtraction: " + calculator.Subtract(10, 5));
+            Console.WriteLine("Multiplication: " + calculator.Multiply(10, 5));
+            Console.WriteLine("Division: " + calculator.Divide(10, 5));
 
         }
     }
