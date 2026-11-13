@@ -10,6 +10,16 @@ namespace GitHubCI_Demo
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Welcome to GitHub Actions!");
+
+            int number1 = 10;
+            int number2 = 20;
+
+            int result = number1 + number2;
+
+            Console.WriteLine("Addition Result: " + result);
+
         }
     }
 }

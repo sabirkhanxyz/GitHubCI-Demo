@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="GitHubCI-Demo/GitHubCI-Demo.csproj" />
+  <Project Path="GitHubCI-Demo/GitHubCI-Demo.csproj" Id="42ea0c6c-b612-48cd-b74f-2268180e3357" />
+  <Project Path="MyConsoleApp.Tests1/MyConsoleApp.Tests1.csproj" />
 </Solution>
