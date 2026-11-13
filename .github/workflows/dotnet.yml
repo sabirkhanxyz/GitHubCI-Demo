@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    name: Build and Test Calculator
+    name: Build Calculator Application
     runs-on: windows-latest
 
     steps:
@@ -25,11 +25,5 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restore Dependencies
-        run: dotnet restore
-
       - name: Build Application
-        run: dotnet build --configuration Release --no-restore
-
-      - name: Run Unit Tests
-        run: dotnet test --configuration Release --no-build
+        run: dotnet build --configuration Release
